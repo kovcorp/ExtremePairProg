@@ -17,8 +17,8 @@ namespace PLJ
             int panelSize = 50;
             int panelOffset = 10;
 
-            int groupSize = topCorner + cells * (panelSize + panelOffset);
-            groupBox1.Size = new Size(groupSize, groupSize);    
+            int groupBoxSize = 2 * topCorner + cells * (panelSize + panelOffset);
+            groupBox1.Size = new Size(groupBoxSize, groupBoxSize);    
 
             panelMatrix = new List<List<Panel>>();
             for (int i = 0; i < cells; i++)
@@ -32,7 +32,6 @@ namespace PLJ
                     int yCoord = topCorner + j * (panelSize + panelOffset);
                     panel.Location = new Point(xCoord, yCoord);
                     panel.Name = "panel" + i + ";" + j;
-                    panel.TabIndex = i + j;
                     panel.BackColor = SystemColors.ActiveCaptionText;
                     row.Add(panel);
                     groupBox1.Controls.Add(panel);
