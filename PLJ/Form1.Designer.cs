@@ -29,67 +29,67 @@
         private void InitializeComponent()
         {
             groupBox1 = new GroupBox();
-            panel1 = new Panel();
-            panel2 = new Panel();
-            panel3 = new Panel();
-            panel4 = new Panel();
-            panel5 = new Panel();
-            panel6 = new Panel();
-            panel7 = new Panel();
-            panel8 = new Panel();
-            panel9 = new Panel();
-            panel10 = new Panel();
-            panel11 = new Panel();
-            panel12 = new Panel();
-            panel13 = new Panel();
-            panel14 = new Panel();
-            panel15 = new Panel();
+            p44 = new Panel();
+            p43 = new Panel();
+            p42 = new Panel();
+            p41 = new Panel();
+            p40 = new Panel();
+            p34 = new Panel();
+            p33 = new Panel();
+            p32 = new Panel();
+            p31 = new Panel();
+            p30 = new Panel();
+            panel11x = new Panel();
             panel16 = new Panel();
             panel17 = new Panel();
             panel18 = new Panel();
             panel19 = new Panel();
-            panel20 = new Panel();
-            panel21 = new Panel();
-            panel22 = new Panel();
-            panel23 = new Panel();
-            panel24 = new Panel();
-            panel25 = new Panel();
-            panel26 = new Panel();
-            panel27 = new Panel();
-            panel28 = new Panel();
-            panel29 = new Panel();
-            panel30 = new Panel();
+            p24 = new Panel();
+            p23 = new Panel();
+            p14 = new Panel();
+            p22 = new Panel();
+            p13 = new Panel();
+            p21 = new Panel();
+            p12 = new Panel();
+            p20 = new Panel();
+            p11 = new Panel();
+            p10 = new Panel();
+            p04 = new Panel();
+            p03 = new Panel();
+            p02 = new Panel();
+            p01 = new Panel();
+            p00 = new Panel();
             groupBox1.SuspendLayout();
-            panel11.SuspendLayout();
+            panel11x.SuspendLayout();
             SuspendLayout();
             // 
             // groupBox1
             // 
-            groupBox1.Controls.Add(panel26);
-            groupBox1.Controls.Add(panel27);
-            groupBox1.Controls.Add(panel28);
-            groupBox1.Controls.Add(panel29);
-            groupBox1.Controls.Add(panel30);
-            groupBox1.Controls.Add(panel21);
-            groupBox1.Controls.Add(panel22);
-            groupBox1.Controls.Add(panel23);
-            groupBox1.Controls.Add(panel24);
-            groupBox1.Controls.Add(panel25);
-            groupBox1.Controls.Add(panel11);
-            groupBox1.Controls.Add(panel12);
-            groupBox1.Controls.Add(panel6);
-            groupBox1.Controls.Add(panel13);
-            groupBox1.Controls.Add(panel7);
-            groupBox1.Controls.Add(panel14);
-            groupBox1.Controls.Add(panel8);
-            groupBox1.Controls.Add(panel15);
-            groupBox1.Controls.Add(panel9);
-            groupBox1.Controls.Add(panel10);
-            groupBox1.Controls.Add(panel5);
-            groupBox1.Controls.Add(panel4);
-            groupBox1.Controls.Add(panel3);
-            groupBox1.Controls.Add(panel2);
-            groupBox1.Controls.Add(panel1);
+            groupBox1.Controls.Add(p44);
+            groupBox1.Controls.Add(p43);
+            groupBox1.Controls.Add(p42);
+            groupBox1.Controls.Add(p41);
+            groupBox1.Controls.Add(p40);
+            groupBox1.Controls.Add(p34);
+            groupBox1.Controls.Add(p33);
+            groupBox1.Controls.Add(p32);
+            groupBox1.Controls.Add(p31);
+            groupBox1.Controls.Add(p30);
+            groupBox1.Controls.Add(panel11x);
+            groupBox1.Controls.Add(p23);
+            groupBox1.Controls.Add(p14);
+            groupBox1.Controls.Add(p22);
+            groupBox1.Controls.Add(p13);
+            groupBox1.Controls.Add(p21);
+            groupBox1.Controls.Add(p12);
+            groupBox1.Controls.Add(p20);
+            groupBox1.Controls.Add(p11);
+            groupBox1.Controls.Add(p10);
+            groupBox1.Controls.Add(p04);
+            groupBox1.Controls.Add(p03);
+            groupBox1.Controls.Add(p02);
+            groupBox1.Controls.Add(p01);
+            groupBox1.Controls.Add(p00);
             groupBox1.Location = new Point(12, 12);
             groupBox1.Name = "groupBox1";
             groupBox1.Size = new Size(286, 309);
@@ -97,115 +97,87 @@
             groupBox1.TabStop = false;
             groupBox1.Text = "PLJ";
             // 
-            // panel1
+            // p44
             // 
-            panel1.Location = new Point(6, 26);
-            panel1.Name = "panel1";
-            panel1.Size = new Size(50, 50);
-            panel1.TabIndex = 0;
+            p44.Location = new Point(230, 250);
+            p44.Name = "p44";
+            p44.Size = new Size(50, 50);
+            p44.TabIndex = 18;
             // 
-            // panel2
+            // p43
             // 
-            panel2.Location = new Point(62, 26);
-            panel2.Name = "panel2";
-            panel2.Size = new Size(50, 50);
-            panel2.TabIndex = 1;
+            p43.Location = new Point(174, 250);
+            p43.Name = "p43";
+            p43.Size = new Size(50, 50);
+            p43.TabIndex = 17;
             // 
-            // panel3
+            // p42
             // 
-            panel3.Location = new Point(118, 26);
-            panel3.Name = "panel3";
-            panel3.Size = new Size(50, 50);
-            panel3.TabIndex = 1;
+            p42.Location = new Point(118, 250);
+            p42.Name = "p42";
+            p42.Size = new Size(50, 50);
+            p42.TabIndex = 15;
             // 
-            // panel4
+            // p41
             // 
-            panel4.Location = new Point(174, 26);
-            panel4.Name = "panel4";
-            panel4.Size = new Size(50, 50);
-            panel4.TabIndex = 2;
+            p41.Location = new Point(62, 250);
+            p41.Name = "p41";
+            p41.Size = new Size(50, 50);
+            p41.TabIndex = 16;
             // 
-            // panel5
+            // p40
             // 
-            panel5.Location = new Point(230, 26);
-            panel5.Name = "panel5";
-            panel5.Size = new Size(50, 50);
-            panel5.TabIndex = 3;
+            p40.Location = new Point(6, 250);
+            p40.Name = "p40";
+            p40.Size = new Size(50, 50);
+            p40.TabIndex = 14;
             // 
-            // panel6
+            // p34
             // 
-            panel6.Location = new Point(230, 82);
-            panel6.Name = "panel6";
-            panel6.Size = new Size(50, 50);
-            panel6.TabIndex = 8;
+            p34.Location = new Point(230, 194);
+            p34.Name = "p34";
+            p34.Size = new Size(50, 50);
+            p34.TabIndex = 13;
             // 
-            // panel7
+            // p33
             // 
-            panel7.Location = new Point(174, 82);
-            panel7.Name = "panel7";
-            panel7.Size = new Size(50, 50);
-            panel7.TabIndex = 7;
+            p33.Location = new Point(174, 194);
+            p33.Name = "p33";
+            p33.Size = new Size(50, 50);
+            p33.TabIndex = 12;
             // 
-            // panel8
+            // p32
             // 
-            panel8.Location = new Point(118, 82);
-            panel8.Name = "panel8";
-            panel8.Size = new Size(50, 50);
-            panel8.TabIndex = 5;
+            p32.Location = new Point(118, 194);
+            p32.Name = "p32";
+            p32.Size = new Size(50, 50);
+            p32.TabIndex = 10;
             // 
-            // panel9
+            // p31
             // 
-            panel9.Location = new Point(62, 82);
-            panel9.Name = "panel9";
-            panel9.Size = new Size(50, 50);
-            panel9.TabIndex = 6;
+            p31.Location = new Point(62, 194);
+            p31.Name = "p31";
+            p31.Size = new Size(50, 50);
+            p31.TabIndex = 11;
             // 
-            // panel10
+            // p30
             // 
-            panel10.Location = new Point(6, 82);
-            panel10.Name = "panel10";
-            panel10.Size = new Size(50, 50);
-            panel10.TabIndex = 4;
+            p30.Location = new Point(6, 194);
+            p30.Name = "p30";
+            p30.Size = new Size(50, 50);
+            p30.TabIndex = 9;
             // 
-            // panel11
+            // panel11x
             // 
-            panel11.Controls.Add(panel16);
-            panel11.Controls.Add(panel17);
-            panel11.Controls.Add(panel18);
-            panel11.Controls.Add(panel19);
-            panel11.Controls.Add(panel20);
-            panel11.Location = new Point(230, 138);
-            panel11.Name = "panel11";
-            panel11.Size = new Size(50, 50);
-            panel11.TabIndex = 8;
-            // 
-            // panel12
-            // 
-            panel12.Location = new Point(174, 138);
-            panel12.Name = "panel12";
-            panel12.Size = new Size(50, 50);
-            panel12.TabIndex = 7;
-            // 
-            // panel13
-            // 
-            panel13.Location = new Point(118, 138);
-            panel13.Name = "panel13";
-            panel13.Size = new Size(50, 50);
-            panel13.TabIndex = 5;
-            // 
-            // panel14
-            // 
-            panel14.Location = new Point(62, 138);
-            panel14.Name = "panel14";
-            panel14.Size = new Size(50, 50);
-            panel14.TabIndex = 6;
-            // 
-            // panel15
-            // 
-            panel15.Location = new Point(6, 138);
-            panel15.Name = "panel15";
-            panel15.Size = new Size(50, 50);
-            panel15.TabIndex = 4;
+            panel11x.Controls.Add(panel16);
+            panel11x.Controls.Add(panel17);
+            panel11x.Controls.Add(panel18);
+            panel11x.Controls.Add(panel19);
+            panel11x.Controls.Add(p24);
+            panel11x.Location = new Point(230, 138);
+            panel11x.Name = "panel11x";
+            panel11x.Size = new Size(50, 50);
+            panel11x.TabIndex = 8;
             // 
             // panel16
             // 
@@ -235,82 +207,110 @@
             panel19.Size = new Size(50, 50);
             panel19.TabIndex = 6;
             // 
-            // panel20
+            // p24
             // 
-            panel20.Location = new Point(0, 0);
-            panel20.Name = "panel20";
-            panel20.Size = new Size(50, 50);
-            panel20.TabIndex = 4;
+            p24.Location = new Point(0, 0);
+            p24.Name = "p24";
+            p24.Size = new Size(50, 50);
+            p24.TabIndex = 4;
             // 
-            // panel21
+            // p23
             // 
-            panel21.Location = new Point(230, 194);
-            panel21.Name = "panel21";
-            panel21.Size = new Size(50, 50);
-            panel21.TabIndex = 13;
+            p23.Location = new Point(174, 138);
+            p23.Name = "p23";
+            p23.Size = new Size(50, 50);
+            p23.TabIndex = 7;
             // 
-            // panel22
+            // p14
             // 
-            panel22.Location = new Point(174, 194);
-            panel22.Name = "panel22";
-            panel22.Size = new Size(50, 50);
-            panel22.TabIndex = 12;
+            p14.Location = new Point(230, 82);
+            p14.Name = "p14";
+            p14.Size = new Size(50, 50);
+            p14.TabIndex = 8;
             // 
-            // panel23
+            // p22
             // 
-            panel23.Location = new Point(118, 194);
-            panel23.Name = "panel23";
-            panel23.Size = new Size(50, 50);
-            panel23.TabIndex = 10;
+            p22.Location = new Point(118, 138);
+            p22.Name = "p22";
+            p22.Size = new Size(50, 50);
+            p22.TabIndex = 5;
             // 
-            // panel24
+            // p13
             // 
-            panel24.Location = new Point(62, 194);
-            panel24.Name = "panel24";
-            panel24.Size = new Size(50, 50);
-            panel24.TabIndex = 11;
+            p13.Location = new Point(174, 82);
+            p13.Name = "p13";
+            p13.Size = new Size(50, 50);
+            p13.TabIndex = 7;
             // 
-            // panel25
+            // p21
             // 
-            panel25.Location = new Point(6, 194);
-            panel25.Name = "panel25";
-            panel25.Size = new Size(50, 50);
-            panel25.TabIndex = 9;
+            p21.Location = new Point(62, 138);
+            p21.Name = "p21";
+            p21.Size = new Size(50, 50);
+            p21.TabIndex = 6;
             // 
-            // panel26
+            // p12
             // 
-            panel26.Location = new Point(230, 250);
-            panel26.Name = "panel26";
-            panel26.Size = new Size(50, 50);
-            panel26.TabIndex = 18;
+            p12.Location = new Point(118, 82);
+            p12.Name = "p12";
+            p12.Size = new Size(50, 50);
+            p12.TabIndex = 5;
             // 
-            // panel27
+            // p20
             // 
-            panel27.Location = new Point(174, 250);
-            panel27.Name = "panel27";
-            panel27.Size = new Size(50, 50);
-            panel27.TabIndex = 17;
+            p20.Location = new Point(6, 138);
+            p20.Name = "p20";
+            p20.Size = new Size(50, 50);
+            p20.TabIndex = 4;
             // 
-            // panel28
+            // p11
             // 
-            panel28.Location = new Point(118, 250);
-            panel28.Name = "panel28";
-            panel28.Size = new Size(50, 50);
-            panel28.TabIndex = 15;
+            p11.Location = new Point(62, 82);
+            p11.Name = "p11";
+            p11.Size = new Size(50, 50);
+            p11.TabIndex = 6;
             // 
-            // panel29
+            // p10
             // 
-            panel29.Location = new Point(62, 250);
-            panel29.Name = "panel29";
-            panel29.Size = new Size(50, 50);
-            panel29.TabIndex = 16;
+            p10.Location = new Point(6, 82);
+            p10.Name = "p10";
+            p10.Size = new Size(50, 50);
+            p10.TabIndex = 4;
             // 
-            // panel30
+            // p04
             // 
-            panel30.Location = new Point(6, 250);
-            panel30.Name = "panel30";
-            panel30.Size = new Size(50, 50);
-            panel30.TabIndex = 14;
+            p04.Location = new Point(230, 26);
+            p04.Name = "p04";
+            p04.Size = new Size(50, 50);
+            p04.TabIndex = 3;
+            // 
+            // p03
+            // 
+            p03.Location = new Point(174, 26);
+            p03.Name = "p03";
+            p03.Size = new Size(50, 50);
+            p03.TabIndex = 2;
+            // 
+            // p02
+            // 
+            p02.Location = new Point(118, 26);
+            p02.Name = "p02";
+            p02.Size = new Size(50, 50);
+            p02.TabIndex = 1;
+            // 
+            // p01
+            // 
+            p01.Location = new Point(62, 26);
+            p01.Name = "p01";
+            p01.Size = new Size(50, 50);
+            p01.TabIndex = 1;
+            // 
+            // p00
+            // 
+            p00.Location = new Point(6, 26);
+            p00.Name = "p00";
+            p00.Size = new Size(50, 50);
+            p00.TabIndex = 0;
             // 
             // Form1
             // 
@@ -320,43 +320,44 @@
             Controls.Add(groupBox1);
             Name = "Form1";
             Text = "Form1";
+            Load += Form1_Load;
             groupBox1.ResumeLayout(false);
-            panel11.ResumeLayout(false);
+            panel11x.ResumeLayout(false);
             ResumeLayout(false);
         }
 
         #endregion
 
         private GroupBox groupBox1;
-        private Panel panel1;
-        private Panel panel26;
-        private Panel panel27;
-        private Panel panel28;
-        private Panel panel29;
-        private Panel panel30;
-        private Panel panel21;
-        private Panel panel22;
-        private Panel panel23;
-        private Panel panel24;
-        private Panel panel25;
-        private Panel panel11;
+        private Panel p00;
+        private Panel p44;
+        private Panel p43;
+        private Panel p42;
+        private Panel p41;
+        private Panel p40;
+        private Panel p34;
+        private Panel p33;
+        private Panel p32;
+        private Panel p31;
+        private Panel p30;
+        private Panel panel11x;
         private Panel panel16;
         private Panel panel17;
         private Panel panel18;
         private Panel panel19;
-        private Panel panel20;
-        private Panel panel12;
-        private Panel panel6;
-        private Panel panel13;
-        private Panel panel7;
-        private Panel panel14;
-        private Panel panel8;
-        private Panel panel15;
-        private Panel panel9;
-        private Panel panel10;
-        private Panel panel5;
-        private Panel panel4;
-        private Panel panel3;
-        private Panel panel2;
+        private Panel p24;
+        private Panel p23;
+        private Panel p14;
+        private Panel p22;
+        private Panel p13;
+        private Panel p21;
+        private Panel p12;
+        private Panel p20;
+        private Panel p11;
+        private Panel p10;
+        private Panel p04;
+        private Panel p03;
+        private Panel p02;
+        private Panel p01;
     }
 }
