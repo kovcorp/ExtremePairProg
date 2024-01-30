@@ -73,9 +73,29 @@ namespace PLJ.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap chess_mode_btn {
+            get {
+                object obj = ResourceManager.GetObject("chess_mode_btn", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap red_tile_smashed {
             get {
                 object obj = ResourceManager.GetObject("red_tile_smashed", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap side_mode_btn {
+            get {
+                object obj = ResourceManager.GetObject("side_mode_btn", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }

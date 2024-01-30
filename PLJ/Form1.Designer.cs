@@ -36,9 +36,8 @@
             // 
             btn_startSideGame.Location = new Point(12, 12);
             btn_startSideGame.Name = "btn_startSideGame";
-            btn_startSideGame.Size = new Size(117, 23);
+            btn_startSideGame.Size = new Size(120, 25);
             btn_startSideGame.TabIndex = 0;
-            btn_startSideGame.Text = "Start Side Game";
             btn_startSideGame.UseVisualStyleBackColor = true;
             btn_startSideGame.Click += btn_startSideGame_Click;
             // 
@@ -46,9 +45,8 @@
             // 
             btn_startChessGame.Location = new Point(12, 41);
             btn_startChessGame.Name = "btn_startChessGame";
-            btn_startChessGame.Size = new Size(117, 23);
+            btn_startChessGame.Size = new Size(120, 25);
             btn_startChessGame.TabIndex = 1;
-            btn_startChessGame.Text = "Start Chess Game";
             btn_startChessGame.UseVisualStyleBackColor = true;
             btn_startChessGame.Click += btn_startChessGame_Click;
             // 

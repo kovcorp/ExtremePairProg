@@ -121,7 +121,13 @@
   <data name="black_tile_smashed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\black_tile_smashed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="chess_mode_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\chess_mode_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="red_tile_smashed" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\red_tile_smashed.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
+  <data name="side_mode_btn" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\side_mode_btn.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>
