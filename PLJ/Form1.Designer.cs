@@ -40,6 +40,7 @@
             btn_startSideGame.TabIndex = 0;
             btn_startSideGame.Text = "Start Side Game";
             btn_startSideGame.UseVisualStyleBackColor = true;
+            btn_startSideGame.Click += btn_startSideGame_Click;
             // 
             // btn_startChessGame
             // 
@@ -49,6 +50,7 @@
             btn_startChessGame.TabIndex = 1;
             btn_startChessGame.Text = "Start Chess Game";
             btn_startChessGame.UseVisualStyleBackColor = true;
+            btn_startChessGame.Click += btn_startChessGame_Click;
             // 
             // Form1
             // 
