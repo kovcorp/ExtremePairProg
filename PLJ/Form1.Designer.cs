@@ -28,12 +28,43 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.components = new System.ComponentModel.Container();
-            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Text = "Form1";
+            btn_startSideGame = new Button();
+            btn_startChessGame = new Button();
+            SuspendLayout();
+            // 
+            // btn_startSideGame
+            // 
+            btn_startSideGame.Location = new Point(12, 12);
+            btn_startSideGame.Name = "btn_startSideGame";
+            btn_startSideGame.Size = new Size(117, 23);
+            btn_startSideGame.TabIndex = 0;
+            btn_startSideGame.Text = "Start Side Game";
+            btn_startSideGame.UseVisualStyleBackColor = true;
+            // 
+            // btn_startChessGame
+            // 
+            btn_startChessGame.Location = new Point(12, 41);
+            btn_startChessGame.Name = "btn_startChessGame";
+            btn_startChessGame.Size = new Size(117, 23);
+            btn_startChessGame.TabIndex = 1;
+            btn_startChessGame.Text = "Start Chess Game";
+            btn_startChessGame.UseVisualStyleBackColor = true;
+            // 
+            // Form1
+            // 
+            AutoScaleDimensions = new SizeF(7F, 15F);
+            AutoScaleMode = AutoScaleMode.Font;
+            ClientSize = new Size(279, 78);
+            Controls.Add(btn_startChessGame);
+            Controls.Add(btn_startSideGame);
+            Name = "Form1";
+            Text = "PLJ";
+            ResumeLayout(false);
         }
 
         #endregion
+
+        private Button btn_startSideGame;
+        private Button btn_startChessGame;
     }
 }
