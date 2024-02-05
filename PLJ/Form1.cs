@@ -10,13 +10,13 @@ namespace PLJ
 
         private void btn_startSideGame_Click(object sender, EventArgs e)
         {
-            GameForm gForm = new("PLJ - Side mode");
+            GameForm gForm = new("PLJ - Side mode", GameForm.SIDE_MODE);
             gForm.ShowDialog();
         }
 
         private void btn_startChessGame_Click(object sender, EventArgs e)
         {
-            GameForm gForm = new("PLJ - Chess mode");
+            GameForm gForm = new("PLJ - Chess mode", GameForm.HORSEY_MODE);
             gForm.ShowDialog();
         }
 
