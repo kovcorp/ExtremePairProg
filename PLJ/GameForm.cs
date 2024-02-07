@@ -31,7 +31,11 @@ namespace PLJ
                 {
                     PictureX pBox = new(new Point(i, j));
                     pBox.Location = new Point(x, y);
+
                     pBox.Click += turn_Neighbours;
+                    pBox.MouseEnter += PBox_MouseEnter;
+                    pBox.MouseLeave += PBox_MouseLeave;
+                    
                     Controls.Add(pBox);
                     pboxes.Add(pBox);
                     x += 85;
@@ -40,6 +44,22 @@ namespace PLJ
                 y += 85;
             }
 
+        }
+
+        private void PBox_MouseLeave(object? sender, EventArgs e)
+        {
+            if (((PictureX)sender).Tag == "red")
+                ((PictureX)sender).Image = Properties.Resources.red_tile_smashed;
+            else
+                ((PictureX)sender).Image = Properties.Resources.black_tile_smashed;
+        }
+
+        private void PBox_MouseEnter(object? sender, EventArgs e)
+        {
+            if(((PictureX)sender).Tag == "red")
+                ((PictureX)sender).Image = Properties.Resources.preview_black_tile_smashed;
+            else
+                ((PictureX)sender).Image = Properties.Resources.preview_red_tile_smashed;
         }
 
         public void turn_Neighbours(object sender, EventArgs e)
