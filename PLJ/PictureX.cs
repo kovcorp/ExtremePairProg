@@ -35,5 +35,29 @@ namespace PLJ
                 Tag = "black";
             }
         }
+
+        public void TurnPreview()
+        {
+            if (Tag == "black")
+            {
+                Image = Properties.Resources.preview_red_tile_smashed;
+            }
+            else
+            {
+                Image = Properties.Resources.preview_black_tile_smashed;
+            }
+        }
+
+        public void TurnPreviewBack()
+        {
+            if (Tag == "black")
+            {
+                Image = Properties.Resources.black_tile_smashed;
+            }
+            else
+            {
+                Image = Properties.Resources.red_tile_smashed;
+            }
+        }
     }
 }

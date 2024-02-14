@@ -5,14 +5,14 @@ namespace PLJ
     public partial class GameForm : Form
     {
         private List<PictureX> pboxes = new();
-        private double neighbourDistance;
+        private double expectedNeighbourDistance;
 
         public static double SIDE_MODE = 1.0;
         public static double HORSEY_MODE = Math.Sqrt(5.0);
         public GameForm(String headerText, double expectedNeighbourDistance)
         {
             InitializeComponent();
-            neighbourDistance = expectedNeighbourDistance;
+            this.expectedNeighbourDistance = expectedNeighbourDistance;
 
             this.SuspendLayout();
             this.Text = headerText;
@@ -35,7 +35,7 @@ namespace PLJ
                     pBox.Click += turn_Neighbours;
                     pBox.MouseEnter += PBox_MouseEnter;
                     pBox.MouseLeave += PBox_MouseLeave;
-                    
+
                     Controls.Add(pBox);
                     pboxes.Add(pBox);
                     x += 85;
@@ -43,23 +43,39 @@ namespace PLJ
                 x = 30;
                 y += 85;
             }
-
         }
 
         private void PBox_MouseLeave(object? sender, EventArgs e)
         {
-            if (((PictureX)sender).Tag == "red")
-                ((PictureX)sender).Image = Properties.Resources.red_tile_smashed;
-            else
-                ((PictureX)sender).Image = Properties.Resources.black_tile_smashed;
+            Tag = null;
+            timer1.Stop();
+            foreach (PictureX pBox in pboxes)
+            {
+                if (equalsWithTolerance(getDistance(((PictureX)sender).coordinates, pBox.coordinates), expectedNeighbourDistance, 0.001))
+                    pBox.TurnPreviewBack();
+            }
+            ((PictureX)sender).TurnPreviewBack();
         }
 
         private void PBox_MouseEnter(object? sender, EventArgs e)
         {
-            if(((PictureX)sender).Tag == "red")
-                ((PictureX)sender).Image = Properties.Resources.preview_black_tile_smashed;
-            else
-                ((PictureX)sender).Image = Properties.Resources.preview_red_tile_smashed;
+            Tag = ((PictureX)sender);
+            timer1.Start();
+        }
+
+        private void timer1_Tick(object sender, EventArgs e)
+        {
+            timer1.Stop();
+            if (Tag != null)
+            {
+                PictureX p = (PictureX)Tag;
+                foreach (PictureX pBox in pboxes)
+                {
+                    if (equalsWithTolerance(getDistance(p.coordinates, pBox.coordinates), expectedNeighbourDistance, 0.001))
+                        pBox.TurnPreview();
+                }
+                p.TurnPreview();
+            }
         }
 
         public void turn_Neighbours(object sender, EventArgs e)
@@ -70,16 +86,16 @@ namespace PLJ
             foreach (PictureX pBox in pboxes)
             {
                 double distance = getDistance(coordinates, pBox.coordinates);
-                if (equalsWithTolerance(distance, neighbourDistance, 0.001))
+                if (equalsWithTolerance(distance, expectedNeighbourDistance, 0.001))
                 {
                     pBox.Turn();
                 }
-                if(pBox.Tag == "black")
+                if (pBox.Tag == "black")
                 {
                     everythingOk = false;
                 }
             }
-            if(everythingOk)
+            if (everythingOk)
             {
                 MessageBox.Show("Nyertel!!!!!!");
             }
@@ -90,9 +106,11 @@ namespace PLJ
             return Math.Sqrt(Math.Pow(start.X - end.X, 2) + Math.Pow(start.Y - end.Y, 2));
         }
 
-        private bool equalsWithTolerance(double actual, double expected, double tolerance)
+        private bool equalsWithTolerance(double actual, double expectedDistance, double tolerance)
         {
-            return Math.Abs(actual - expected) < tolerance;
+            return Math.Abs(actual - expectedDistance) < tolerance;
         }
+
+        
     }
 }
