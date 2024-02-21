@@ -9,6 +9,7 @@ namespace PLJ
 
         public static double SIDE_MODE = 1.0;
         public static double HORSEY_MODE = Math.Sqrt(5.0);
+        private int stepCounter = 0;
         public GameForm(String headerText, double expectedNeighbourDistance)
         {
             InitializeComponent();
@@ -22,6 +23,7 @@ namespace PLJ
 
         private void SetUp()
         {
+            label_step.Text = stepCounter.ToString();
             int x = 30;
             int y = 30;
 
@@ -78,8 +80,15 @@ namespace PLJ
             }
         }
 
+        private void IncreaseStepCounter()
+        {
+            stepCounter++;
+            label_step.Text = stepCounter.ToString();
+        }
+
         public void turn_Neighbours(object sender, EventArgs e)
         {
+            IncreaseStepCounter();
             PictureX senderX = (PictureX)sender;
             Point coordinates = senderX.coordinates;
             Boolean everythingOk = true;
@@ -87,17 +96,14 @@ namespace PLJ
             {
                 double distance = getDistance(coordinates, pBox.coordinates);
                 if (equalsWithTolerance(distance, expectedNeighbourDistance, 0.001))
-                {
                     pBox.Turn();
-                }
+
                 if (pBox.Tag == "black")
-                {
                     everythingOk = false;
-                }
             }
             if (everythingOk)
             {
-                MessageBox.Show("Nyertel!!!!!!");
+                MessageBox.Show("Nyertel, "+ stepCounter +" lépésből");
             }
         }
 
@@ -110,7 +116,5 @@ namespace PLJ
         {
             return Math.Abs(actual - expectedDistance) < tolerance;
         }
-
-        
     }
 }
