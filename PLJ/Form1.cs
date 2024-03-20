@@ -2,6 +2,9 @@ namespace PLJ
 {
     public partial class Form1 : Form
     {
+        public static double SIDE_MODE = 1.0;
+        public static double HORSEY_MODE = Math.Sqrt(5.0);
+
         public Form1()
         {
             InitializeComponent();
@@ -10,13 +13,22 @@ namespace PLJ
 
         private void btn_startSideGame_Click(object sender, EventArgs e)
         {
-            GameForm gForm = new("PLJ - Side mode", GameForm.SIDE_MODE);
+            View gForm = new("PLJ - Side mode");
+
+            Model myModel = new(SIDE_MODE, gForm);
+            Controller controller = new Controller(myModel);
+            gForm.SetController(controller);
+
             gForm.ShowDialog();
         }
 
         private void btn_startChessGame_Click(object sender, EventArgs e)
         {
-            GameForm gForm = new("PLJ - Chess mode", GameForm.HORSEY_MODE);
+            View gForm = new("PLJ - Horsey mode");
+            Model myModel = new(HORSEY_MODE, gForm);
+            Controller controller = new Controller(myModel);
+            gForm.SetController(controller);
+
             gForm.ShowDialog();
         }
 

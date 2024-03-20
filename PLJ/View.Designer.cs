@@ -1,6 +1,6 @@
 ﻿namespace PLJ
 {
-    partial class GameForm
+    partial class View
     {
         /// <summary>
         /// Required designer variable.
@@ -32,11 +32,7 @@
             timer1 = new System.Windows.Forms.Timer(components);
             label_step = new Label();
             SuspendLayout();
-            // 
-            // timer1
-            // 
-            timer1.Interval = 1000;
-            timer1.Tick += timer1_Tick;
+           
             // 
             // label_step
             // 

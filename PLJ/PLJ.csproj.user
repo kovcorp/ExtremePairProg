@@ -4,7 +4,7 @@
     <Compile Update="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Update="GameForm.cs">
+    <Compile Update="View.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Update="PictureX.cs">
